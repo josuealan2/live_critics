@@ -1,7 +1,7 @@
 {
   "name": "skillsync",
   "version": "1.0.0",
-  "description": "Nutrition App for users to look for healthy meals and recipes and share best practices to stay healthy.",
+  "description": "App that allows users to review music, podcasts, and artists.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,7 @@
   "dependencies": {
     "express": "^4.18.2",
     "express-graphql": "^0.12.0",
-    "graphql": "^16.8.1",
+    "graphql": "^15.8.0",
     "mongoose": "^8.1.1"
   }
 }
