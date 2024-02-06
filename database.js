@@ -15,5 +15,13 @@ mongoose.connect(mongoURI, options)
   .then(() => console.log('MongoDB Connected'))
   .catch(err => console.log('MongoDB connection error:', err));
 
+  // Handle close
+process.on('SIGINT', () => {
+  mongoose.connection.close(() => {
+    console.log('MongoDB connection closed due to app termination');
+    process.exit(0);
+  });
+});
+
 module.exports = mongoose;
 
