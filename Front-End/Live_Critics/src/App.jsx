@@ -1,14 +1,20 @@
-import { useState } from 'react'
-import { Header } from "./components/Header/Header"
+import React from "react";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 import './App.css'
+import { Box, Grid } from "@chakra-ui/layout";
+import Home from "./components/Tabs/Home";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
+
+   <>
+   <Header />
+   
+   <Home />
     
-     <Header />
-    
+    <Footer />
+    </>
   )
 }
 

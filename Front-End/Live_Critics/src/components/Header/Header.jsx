@@ -1,25 +1,29 @@
 import React from "react";
 import logo from "../../assets/placeholder.png";
-import { TextField } from "@mui/material";
+
+import Navbar from "../Navbar/Navbar";
+import { Box, Flex } from "@chakra-ui/layout";
+import { Image, Input, Center, Button } from '@chakra-ui/react'
 
 
 function Header(){
     return (
-        <header>
-            <img src={logo} alt="Logo" />
-            <input type="text" />
-            <div>
-                <TextField
-                id="outlined-basic"
-                variant="outlined"
-                fullWidth
-                label="Search"
+        <Flex bg='lightblue' justifyContent='space-between'>
+            <Box>
+                <Image 
+                src={logo}
+                boxSize='80px'
                 />
-            </div>
-            <div>
-             
-            </div>
-        </header>
+            </Box>
+            <Center>
+                <Input placeholder="Search" size='lg' width='300px' />
+                <Button height='48px' >Search</Button>
+            </Center>
+            <Center>
+                <Navbar />
+            </Center>
+        </Flex>
+
     )
 }
 

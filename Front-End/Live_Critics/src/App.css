@@ -4,4 +4,7 @@
   padding: 2rem;
   text-align: center;
 }
+div{
+  max-height: max-content;
+}
 

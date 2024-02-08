@@ -1,20 +1,17 @@
 import React from "react";
 
+import { Link } from 'react-router-dom';
+import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
+
 const Navbar = () => {
     return(
-        <nav>
-        <ul>
-            <li>
-                <a href="#">Top Podcast</a>
-            </li>
-            <li>
-                <a href="#">Top Song</a>
-            </li>
-            <li>
-                <a href="#">Top Album</a>
-            </li>
-        </ul>
-    </nav>
+       <Tabs>
+        <TabList>
+        <Tab><Link >Top Podcast</Link></Tab>
+        <Tab><Link>Top Music</Link></Tab>
+        <Tab><Link>Top Album</Link></Tab>
+        </TabList>
+       </Tabs>
     )
 }
 
