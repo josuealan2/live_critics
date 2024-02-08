@@ -2,12 +2,11 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { ChakraProvider } from '@chakra-ui/react'
 import App from './App.jsx'
-import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Podcast from './components/Tabs/Podcast.jsx'
 import Music from './components/Tabs/Music.jsx'
 import Album from './components/Tabs/Album.jsx'
-import Home from './components/Tabs/Home.jsx'
+import Home from './components/Home/Home.jsx'
 const router = createBrowserRouter([
   {
     path: '/',

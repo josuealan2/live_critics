@@ -8,17 +8,19 @@ import { Image, Input, Center, Button } from '@chakra-ui/react'
 
 function Header(){
     return (
-        <Flex bg='lightblue' justifyContent='space-between'>
-            <Box>
+        <Flex bg='lightblue' justifyContent='space-between' borderRadius='5px'>
+            <Box>{/*Logo of the website */}
                 <Image 
                 src={logo}
                 boxSize='80px'
                 />
             </Box>
+            {/* Search bar*/}
             <Center>
                 <Input placeholder="Search" size='lg' width='300px' />
                 <Button height='48px' >Search</Button>
             </Center>
+            {/* Tabs*/}
             <Center>
                 <Navbar />
             </Center>
