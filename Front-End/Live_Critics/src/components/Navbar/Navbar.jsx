@@ -7,9 +7,9 @@ const Navbar = () => {
     return(
        <Tabs>
         <TabList>
-        <Tab><Link >Top Podcast</Link></Tab>
-        <Tab><Link>Top Music</Link></Tab>
-        <Tab><Link>Top Album</Link></Tab>
+        <Tab><Link to='/Podcast'>Top Podcast</Link></Tab>
+        <Tab><Link to='/Music'>Top Music</Link></Tab>
+        <Tab><Link to='/Album'>Top Album</Link></Tab>
         </TabList>
        </Tabs>
     )
