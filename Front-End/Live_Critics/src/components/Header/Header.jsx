@@ -13,6 +13,7 @@ function Header(){
                 <Image 
                 src={logo}
                 boxSize='80px'
+                borderRadius='5px'
                 />
             </Box>
             {/* Search bar*/}
